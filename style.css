@@ -1,0 +1,54 @@
+/* style.css */
+
+/* Custom styles for Geethika Vuppala's Portfolio */
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: white; /* Reset body background */
+  color: #1e3a8a; /* Primary text color */
+}
+
+h1, h2, h3 {
+  font-weight: bold;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Section padding and centering */
+section {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+/* Hero section background */
+section.bg-gray-100 {
+  background-color: #1e3a8a !important; /* Blue background for intro */
+  color: white;
+}
+
+/* Button hover effects */
+a:hover {
+  transition: all 0.3s ease;
+}
+
+/* Contact links */
+.flex a {
+  font-weight: 500;
+  text-decoration: underline;
+  color: #93c5fd; /* Light blue links */
+}
+
+/* Add some spacing to project cards */
+.grid > div {
+  transition: transform 0.2s ease-in-out;
+  background-color: #2563eb; /* Slightly different blue for cards */
+  color: white;
+}
+
+.grid > div:hover {
+  transform: translateY(-5px);
+}
