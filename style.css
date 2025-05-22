@@ -4,8 +4,8 @@
 
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: white; /* Reset body background */
-  color: #1e3a8a; /* Primary text color */
+  background-color: white;
+  color: #1e3a8a;
 }
 
 h1, h2, h3 {
@@ -24,10 +24,32 @@ section {
   padding-bottom: 4rem;
 }
 
-/* Hero section background */
+/* Intro section (hero) styling */
 section.bg-gray-100 {
-  background-color: #1e3a8a !important; /* Blue background for intro */
-  color: white;
+  background-color: #1e3a8a !important; /* Dark blue background */
+  color: #ffffff;
+}
+
+section.bg-gray-100 h1 {
+  color: #ffffff;
+}
+
+section.bg-gray-100 p {
+  color: #cbd5e1; /* Lighter gray for contrast */
+}
+
+section.bg-gray-100 a {
+  background-color: #ffffff;
+  color: #1e3a8a;
+  font-weight: bold;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+}
+
+section.bg-gray-100 a:hover {
+  background-color: #cbd5e1;
+  color: #1e3a8a;
 }
 
 /* Button hover effects */
@@ -39,16 +61,18 @@ a:hover {
 .flex a {
   font-weight: 500;
   text-decoration: underline;
-  color: #93c5fd; /* Light blue links */
+  color: #1e3a8a;
 }
 
 /* Add some spacing to project cards */
 .grid > div {
   transition: transform 0.2s ease-in-out;
-  background-color: #2563eb; /* Slightly different blue for cards */
-  color: white;
+  background-color: #f1f5f9;
+  color: #1e3a8a;
 }
 
 .grid > div:hover {
   transform: translateY(-5px);
+  background-color: #e2e8f0;
 }
+
