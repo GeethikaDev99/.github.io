@@ -4,8 +4,6 @@
 
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: white;
-  color: #1e3a8a;
 }
 
 h1, h2, h3 {
@@ -24,35 +22,8 @@ section {
   padding-bottom: 4rem;
 }
 
-/* Hero section only with blue background and contrasting text */
-section.hero {
-  background-color: #1e3a8a; /* Deep blue background */
-  color: #ffffff; /* White text for contrast */
-  text-align: center;
-}
-
-section.hero h1 {
-  color: #ffffff;
-}
-
-section.hero p {
-  color: #e0f2fe; /* Light cyan for subtle contrast */
-}
-
-section.hero a {
-  background-color: #ffffff;
-  color: #1e3a8a;
-  font-weight: bold;
-  border-radius: 0.5rem;
-  padding: 0.5rem 1rem;
-  text-decoration: none;
-  display: inline-block;
-  margin-top: 1rem;
-}
-
-section.hero a:hover {
-  background-color: #cbd5e1;
-  color: #1e3a8a;
+/* Button hover effects */
+a:hover {
   transition: all 0.3s ease;
 }
 
@@ -60,17 +31,13 @@ section.hero a:hover {
 .flex a {
   font-weight: 500;
   text-decoration: underline;
-  color: #1e3a8a;
 }
 
-/* Project cards */
+/* Add some spacing to project cards */
 .grid > div {
   transition: transform 0.2s ease-in-out;
-  background-color: #f1f5f9;
-  color: #1e3a8a;
 }
 
 .grid > div:hover {
   transform: translateY(-5px);
-  background-color: #e2e8f0;
 }
