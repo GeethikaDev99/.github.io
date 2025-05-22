@@ -1,26 +1,73 @@
+<!-- index.html -->
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Sai Geethika's Portfolio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Geethika Vuppala | Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
 </head>
-<body>
-  <h1>Hello, I'm Sai Geethika</h1>
-  <p>SharePoint Developer | Power Platform Specialist</p>
+<body class="bg-white text-gray-900">
+  <!-- Hero Section -->
+  <section class="min-h-screen flex flex-col justify-center items-center text-center p-4 bg-gray-100">
+    <div class="flex justify-center">
+      <img src="assets/yourphoto.jpg" alt="Your Photo" class="w-40 h-40 rounded-full shadow-lg mb-4">
+    </div>
+    <h1 class="text-4xl font-bold">Hi, I'm Geethika Vuppala</h1>
+    <p class="text-lg text-gray-600 mt-2">Power Platform & SharePoint Developer | SPFx | Power Automate</p>
+    <a href="resume.pdf" class="mt-4 px-6 py-2 bg-blue-600 text-white rounded hover:bg-blue-700">Download Resume</a>
+  </section>
 
-  <h2>Skills</h2>
-  <ul>
-    <li>Power Apps, Power Automate</li>
-    <li>SPFx (React), SharePoint Online</li>
-    <li>Dataverse, Power BI, JavaScript, TypeScript</li>
-  </ul>
+  <!-- About Section -->
+  <section class="py-16 px-4 max-w-4xl mx-auto">
+    <h2 class="text-3xl font-semibold mb-4">About Me</h2>
+    <p class="text-gray-700 leading-relaxed">
+      I am a SharePoint Developer with 4+ years of experience specializing in Power Platform (Power Apps, Power Automate), SPFx (React), and workflow automation. I'm passionate about building modern business apps that help teams work smarter.
+    </p>
+  </section>
 
-  <h2>Projects</h2>
-  <ul>
-    <li>Governance Suite using CoE Toolkit (Security & Compliance)</li>
-    <li>Unified App Portal – SPFx Webparts with React</li>
-    <li>Medical Escalation Calendar – Automated Scheduling</li>
-  </ul>
+  <!-- Skills Section -->
+  <section class="py-16 px-4 bg-gray-50">
+    <h2 class="text-3xl font-semibold mb-6 text-center">Skills</h2>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+      <span class="bg-white shadow p-4 rounded">Power Apps</span>
+      <span class="bg-white shadow p-4 rounded">Power Automate</span>
+      <span class="bg-white shadow p-4 rounded">SharePoint</span>
+      <span class="bg-white shadow p-4 rounded">SPFx (React)</span>
+      <span class="bg-white shadow p-4 rounded">GitHub</span>
+      <span class="bg-white shadow p-4 rounded">HTML/CSS</span>
+      <span class="bg-white shadow p-4 rounded">JavaScript</span>
+      <span class="bg-white shadow p-4 rounded">Microsoft Teams</span>
+    </div>
+  </section>
 
-  <p>More updates coming soon...</p>
+  <!-- Projects Section -->
+  <section class="py-16 px-4 max-w-5xl mx-auto">
+    <h2 class="text-3xl font-semibold mb-6">Projects</h2>
+    <div class="grid md:grid-cols-2 gap-8">
+      <div class="bg-white shadow p-4 rounded">
+        <h3 class="text-xl font-semibold">Leave Management App</h3>
+        <p class="text-gray-700">Built with Power Apps, this app allows employees to request and track leave with SharePoint backend integration.</p>
+        <a href="#" class="text-blue-600 mt-2 inline-block">View Project</a>
+      </div>
+      <div class="bg-white shadow p-4 rounded">
+        <h3 class="text-xl font-semibold">Document Approval Workflow</h3>
+        <p class="text-gray-700">Automated SharePoint workflow using Power Automate for multi-stage document approvals.</p>
+        <a href="#" class="text-blue-600 mt-2 inline-block">View Project</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="py-16 px-4 text-center bg-gray-100">
+    <h2 class="text-3xl font-semibold mb-4">Contact</h2>
+    <p class="text-gray-700 mb-6">Feel free to reach out for collaboration or job opportunities.</p>
+    <div class="flex justify-center gap-6">
+      <a href="mailto:you@example.com" class="text-blue-600">Email</a>
+      <a href="https://www.linkedin.com/in/yourprofile" class="text-blue-600">LinkedIn</a>
+      <a href="https://github.com/yourusername" class="text-blue-600">GitHub</a>
+    </div>
+  </section>
 </body>
 </html>
