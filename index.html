@@ -9,6 +9,12 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <style>
+    .swiper-button-prev,
+    .swiper-button-next {
+      color: #1d4ed8;
+    }
+  </style>
 </head>
 <body class="bg-white text-gray-900">
   <!-- Hero Section -->
@@ -22,7 +28,7 @@
   </section>
 
   <!-- About Section -->
-  <section class="py-16 px-4 max-w-4xl mx-auto bg-gray-50">
+  <section class="py-16 px-4 max-w-4xl mx-auto bg-gradient-to-r from-blue-50 via-white to-blue-50">
     <h2 class="text-3xl font-semibold mb-4">About Me</h2>
     <p class="text-gray-700 leading-relaxed">
       I design and deliver modern SharePoint and Power Platform solutions that help businesses work smarter. With 4+ years of experience in SharePoint Online, Power Apps, Power Automate, and SPFx (React), I specialize in workflow automation, data integration, and scalable enterprise apps. My goal is to bridge the gap between business needs and technical solutions through collaboration and innovation.
@@ -30,7 +36,7 @@
   </section>
 
   <!-- Skills Section -->
-  <section class="py-16 px-4 bg-blue-50">
+  <section class="py-16 px-4 bg-gradient-to-l from-blue-50 via-white to-blue-50">
     <h2 class="text-3xl font-semibold mb-6 text-center">Skills</h2>
     <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
       <span class="bg-white shadow p-4 rounded hover:scale-105 transition">Power Apps</span>
@@ -45,34 +51,40 @@
   </section>
 
   <!-- Projects Section with Carousel -->
-  <section class="py-16 px-4 max-w-5xl mx-auto">
+  <section class="py-16 px-4 max-w-6xl mx-auto bg-gradient-to-br from-white to-blue-50">
     <h2 class="text-3xl font-semibold mb-6 text-center">Projects</h2>
     <div class="swiper mySwiper">
       <div class="swiper-wrapper">
-        <div class="swiper-slide bg-white shadow p-4 rounded">
-          <h3 class="text-xl font-semibold">Power Apps Governance Suite (IT Governance)</h3>
-          <p class="text-gray-700">Implemented CoE Toolkit to enhance Power Platform security and compliance. Developed custom PowerApps & Power Automate workflows for process optimization.</p>
+        <div class="swiper-slide grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div class="bg-white shadow p-6 rounded">
+            <h3 class="text-xl font-semibold text-blue-700">Power Apps Governance Suite (IT Governance)</h3>
+            <p class="text-gray-700 mt-2">Implemented CoE Toolkit to enhance Power Platform security and compliance. Developed custom PowerApps & Power Automate workflows for process optimization.</p>
+          </div>
+          <div class="bg-white shadow p-6 rounded">
+            <h3 class="text-xl font-semibold text-blue-700">Unified Application Portal (Enterprise IT)</h3>
+            <p class="text-gray-700 mt-2">Built a SharePoint portal using SPFx (fluent UI) & React for seamless app access. Integrated SSO and role-based access control for secure navigation.</p>
+          </div>
         </div>
-        <div class="swiper-slide bg-white shadow p-4 rounded">
-          <h3 class="text-xl font-semibold">Unified Application Portal (Enterprise IT)</h3>
-          <p class="text-gray-700">Built a SharePoint portal using SPFx (fluent UI) & React for seamless app access. Integrated SSO and role-based access control for secure navigation.</p>
-        </div>
-        <div class="swiper-slide bg-white shadow p-4 rounded">
-          <h3 class="text-xl font-semibold">Medical Escalation Calendar (Healthcare)</h3>
-          <p class="text-gray-700">Created a centralized SharePoint-based calendar for medical teams. Automated email notifications via Power Automate, improving response efficiency.</p>
-        </div>
-        <div class="swiper-slide bg-white shadow p-4 rounded">
-          <h3 class="text-xl font-semibold">Regeneron Smartsheet Migration (Pharmaceuticals)</h3>
-          <p class="text-gray-700">Migrated Smartsheet data to SharePoint Online, enhancing reporting and workflows. Developed Power BI dashboards and automated workflows with Power Automate.</p>
+        <div class="swiper-slide grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div class="bg-white shadow p-6 rounded">
+            <h3 class="text-xl font-semibold text-blue-700">Medical Escalation Calendar (Healthcare)</h3>
+            <p class="text-gray-700 mt-2">Created a centralized SharePoint-based calendar for medical teams. Automated email notifications via Power Automate, improving response efficiency.</p>
+          </div>
+          <div class="bg-white shadow p-6 rounded">
+            <h3 class="text-xl font-semibold text-blue-700">Regeneron Smartsheet Migration (Pharmaceuticals)</h3>
+            <p class="text-gray-700 mt-2">Migrated Smartsheet data to SharePoint Online, enhancing reporting and workflows. Developed Power BI dashboards and automated workflows with Power Automate.</p>
+          </div>
         </div>
       </div>
-      <div class="swiper-pagination mt-4"></div>
       <div class="swiper-button-prev"></div>
       <div class="swiper-button-next"></div>
+      <div class="swiper-pagination mt-4"></div>
     </div>
     <script>
       const swiper = new Swiper('.mySwiper', {
         loop: true,
+        slidesPerView: 1,
+        spaceBetween: 30,
         pagination: {
           el: '.swiper-pagination',
           clickable: true,
@@ -80,6 +92,10 @@
         navigation: {
           nextEl: '.swiper-button-next',
           prevEl: '.swiper-button-prev',
+        },
+        autoplay: {
+          delay: 4000,
+          disableOnInteraction: false,
         },
       });
     </script>
